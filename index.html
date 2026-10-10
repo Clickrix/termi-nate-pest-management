@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termi-Nate Pest Management | Pest Control in Plant City, FL</title>
+<meta name="description" content="Family-owned pest control in Plant City, FL for over 20 years. Termite control, insect control, mosquito, wasp, cockroach and wildlife removal. Call (813) 365-6924.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-900:#1a3c2e; --green-700:#256b45; --green-600:#2e8657; --green-100:#e6f4ec;
+  --amber:#e8a13d; --amber-dark:#c97f1c; --ink:#20302a; --muted:#5c6f65; --bg:#fafcf9; --card:#ffffff; --line:#e2ece5;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.2}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:'Sora';font-weight:800;font-size:1.25rem;color:var(--green-900)}
+.brand span{color:var(--green-600)}
+.nav .phone{display:inline-flex;align-items:center;gap:.5rem;background:var(--green-700);color:#fff;font-weight:700;text-decoration:none;padding:.65rem 1.25rem;border-radius:999px;font-size:.95rem}
+.nav .phone:hover{background:var(--green-900)}
+.hero{background:linear-gradient(135deg,#123528 0%,#1e5238 55%,#2e8657 100%);color:#fff;padding:96px 0 84px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(232,161,61,.25),transparent 45%)}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:.35rem .9rem;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.6rem);font-weight:800;max-width:16em;margin-bottom:1rem}
+.hero p{max-width:36em;color:#dfeee5;font-size:1.1rem;margin-bottom:2rem}
+.cta-row{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:.9rem 1.8rem;border-radius:999px;font-size:1rem}
+.btn-call{background:var(--amber);color:#23301f}
+.btn-call:hover{background:#f2b45c}
+.btn-mail{border:2px solid rgba(255,255,255,.6);color:#fff}
+.btn-mail:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;gap:0;flex-wrap:wrap}
+.trust-item{flex:1 1 200px;padding:1.15rem 1.25rem;display:flex;align-items:center;gap:.8rem;font-weight:600;font-size:.95rem;color:var(--green-900)}
+.trust-item+.trust-item{border-left:1px solid var(--line)}
+.tick{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:var(--green-100);color:var(--green-700);display:flex;align-items:center;justify-content:center;font-weight:800}
+section.block{padding:84px 0}
+.kicker{color:var(--green-600);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;margin-bottom:.6rem}
+.block h2{font-size:clamp(1.7rem,3vw,2.4rem);color:var(--green-900);margin-bottom:1rem}
+.lead{color:var(--muted);max-width:44em;font-size:1.05rem;margin-bottom:2.5rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.9rem 1.7rem;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(26,60,46,.10)}
+.icon{width:48px;height:48px;border-radius:14px;background:var(--green-100);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.1rem}
+.card h3{font-size:1.1rem;color:var(--green-900);margin-bottom:.5rem}
+.card p{font-size:.94rem;color:var(--muted)}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:center}
+.about .facts{background:#fff;border:1px solid var(--line);border-radius:18px;padding:2.2rem}
+.fact{display:flex;gap:1rem;margin-bottom:1.4rem}
+.fact:last-child{margin-bottom:0}
+.fact b{color:var(--green-900)}
+.fact p{color:var(--muted);font-size:.95rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:2rem 1.7rem}
+.step .num{font-family:'Sora';font-weight:800;font-size:2rem;color:var(--amber);margin-bottom:.6rem}
+.step h3{color:var(--green-900);margin-bottom:.5rem}
+.step p{color:var(--muted);font-size:.94rem}
+.contact{background:var(--green-900);color:#fff;border-radius:24px;padding:3.5rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.contact h2{color:#fff}
+.contact .lead{color:#cfe2d5}
+.c-line{margin:1.2rem 0}
+.c-line .lbl{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#9fbcab;margin-bottom:.25rem}
+.c-line a{color:#fff;font-weight:700;text-decoration:none;font-size:1.15rem}
+.c-line a:hover{color:var(--amber)}
+footer{background:#0f241b;color:#9fbcab;padding:2.5rem 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer a{color:#cfe2d5;text-decoration:none}
+@media(max-width:860px){
+  .grid,.steps{grid-template-columns:1fr 1fr}
+  .about,.contact{grid-template-columns:1fr}
+  .trust-item+.trust-item{border-left:none;border-top:1px solid var(--line)}
+}
+@media(max-width:560px){.grid,.steps{grid-template-columns:1fr}.hero{padding:64px 0 56px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Termi-Nate <span>Pest Management</span></div>
+    <a class="phone" href="tel:+18133656924">☎ (813) 365-6924</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Family-Owned · Plant City, FL · 20+ Years</div>
+    <h1>Pest Problems Solved — and Kept From Coming Back</h1>
+    <p>Full-service pest management and extermination for Plant City and the surrounding areas. Certified, licensed, and insured — with competitive prices and outstanding customer service.</p>
+    <div class="cta-row">
+      <a class="btn btn-call" href="tel:+18133656924">Call (813) 365-6924</a>
+      <a class="btn btn-mail" href="mailto:nate@termi-nate.com">Email Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><span class="tick">✓</span> Certified, Licensed &amp; Insured</div>
+    <div class="trust-item"><span class="tick">✓</span> Family Owned &amp; Operated</div>
+    <div class="trust-item"><span class="tick">✓</span> Military Discounts Available</div>
+    <div class="trust-item"><span class="tick">✓</span> Open 24 Hours Mon–Sat</div>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Our Services</div>
+    <h2>Complete Pest Control for Your Home or Business</h2>
+    <p class="lead">From a single wasp nest to a full termite treatment plan, we handle every kind of infestation — and work to prevent it from returning.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">🐜</div><h3>Termite Control</h3><p>Inspections, quotes, and full treatments that stop termites and protect your home long-term.</p></div>
+      <div class="card"><div class="icon">🪳</div><h3>Cockroach Extermination</h3><p>Targeted treatments that clear roach infestations and keep them from coming back.</p></div>
+      <div class="card"><div class="icon">🐝</div><h3>Wasp Control</h3><p>Safe, fast removal of wasp nests from eaves, sheds, and yards.</p></div>
+      <div class="card"><div class="icon">🦟</div><h3>Mosquito Control</h3><p>Yard treatments that cut mosquito populations so you can enjoy being outside.</p></div>
+      <div class="card"><div class="icon">🪲</div><h3>Insect Control</h3><p>General pest management for ants, spiders, and common Florida household insects.</p></div>
+      <div class="card"><div class="icon">🐾</div><h3>Wildlife Removal</h3><p>Humane removal of nuisance wildlife from your property, plus prevention advice.</p></div>
+      <div class="card"><div class="icon">🛏️</div><h3>Bed Bug Extermination</h3><p>Thorough bed bug treatments that get to every hiding spot.</p></div>
+      <div class="card"><div class="icon">🛡️</div><h3>Ongoing Prevention</h3><p>Recurring protection plans so a cleared infestation stays cleared.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap about">
+    <div>
+      <div class="kicker">About Us</div>
+      <h2>A Local Family Business You Can Trust</h2>
+      <p class="lead" style="margin-bottom:1.5rem">With over 20 years of exterminator experience, our family-owned company is committed to removing any infestation from your property — and making sure it doesn't return. Everyone is entitled to a pest-free environment.</p>
+      <p style="color:var(--muted)">What sets us apart are our competitive prices and outstanding customer service. We are certified, licensed, and insured, and we have the skills and experience to clear an infestation and prevent the next one.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><span class="tick">✓</span><div><b>20+ Years of Experience</b><p>Two decades of pest management in Central Florida.</p></div></div>
+      <div class="fact"><span class="tick">✓</span><div><b>Certified, Licensed &amp; Insured</b><p>Full-service company, fully credentialed.</p></div></div>
+      <div class="fact"><span class="tick">✓</span><div><b>Serving Plant City &amp; Beyond</b><p>Kathleen, Lakeland, Mulberry, Plant City and surrounding areas.</p></div></div>
+      <div class="fact"><span class="tick">✓</span><div><b>Military Discounts</b><p>Ask about discounts for military families.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">How It Works</div>
+    <h2>Three Steps to a Pest-Free Property</h2>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Get in Touch</h3><p>Call (813) 365-6924 or email us. Tell us what you're seeing — we'll talk through it and schedule a visit.</p></div>
+      <div class="step"><div class="num">02</div><h3>We Treat &amp; Remove</h3><p>Our certified team clears the infestation with safe, effective treatments matched to the pest.</p></div>
+      <div class="step"><div class="num">03</div><h3>Stay Protected</h3><p>We set up prevention so the problem doesn't return — and we're one call away if it does.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Ready for a Pest-Free Home?</h2>
+        <p class="lead">Contact us today for a termite quote or any other pest control service. We're open 24 hours, Monday through Saturday.</p>
+        <a class="btn btn-call" href="tel:+18133656924">Call (813) 365-6924</a>
+      </div>
+      <div>
+        <div class="c-line"><div class="lbl">Phone</div><a href="tel:+18133656924">(813) 365-6924</a></div>
+        <div class="c-line"><div class="lbl">Email</div><a href="mailto:nate@termi-nate.com">nate@termi-nate.com</a></div>
+        <div class="c-line"><div class="lbl">Hours</div><div style="font-weight:600">Mon–Sat: Open 24 Hours · Sun: Closed</div></div>
+        <div class="c-line"><div class="lbl">Service Area</div><div style="font-weight:600">Plant City, Kathleen, Lakeland, Mulberry &amp; surrounding areas</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Termi-Nate Pest Management. All rights reserved.</div>
+    <div><a href="mailto:nate@termi-nate.com">nate@termi-nate.com</a> · <a href="tel:+18133656924">(813) 365-6924</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
